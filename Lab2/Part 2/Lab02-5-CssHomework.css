@@ -1,0 +1,127 @@
+/*Give the <body> element a background of #bda464*/
+
+body{
+    background-color: #bda464;
+}
+
+/*Make the <h1> elements blue*/
+
+h1{
+    color: blue;
+}
+
+/*Make all <li> elements in the shade of hexadecimal blue*/
+
+li{
+    color: blue;
+}
+
+/*Paragraph background to orange*/
+
+p{
+    background-color: orange;
+}
+
+/*Make all <h3> have 5px red solid border*/
+
+h3{
+    border: 5px solid red;
+}
+
+/*Give everything with <abbr> bold and underlined*/
+
+p abbr{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Give elements with class "explanation" red*/
+
+.explanation{
+    color: red;
+}
+
+/*Give <p> in id "zen-benefits" pink background*/
+
+#zen-benefits p{
+    background-color: pink;
+}
+
+/*Make <li> adjacent to <h2> red background*/
+
+h2 + ul li{
+    background-color: red;
+}
+
+/*Give <em> inside <p> red and bold*/
+
+p em{
+    color: red;
+    font-weight: bold;
+}
+
+/* Give visited link green */
+
+a{
+    color: green;
+}
+
+/* Change to body font to any google font as you like */
+
+body{
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Add any animation to <h1> (try the new one not same as the example) */
+
+h1.primary{
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    color: #FFDFD3;
+    animation-name: frungfring;
+    animation-duration: 3.5s;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+@keyframes frungfring{
+    0%{
+        transform: translateX(-10rem);
+    }
+    15%{
+        transform: translate(0);
+    }
+    30%{
+        transform: translateX(10rem);
+    }
+    45%{
+        transform: translate(0);
+    }
+    60%{
+        transform: translateY(-3rem);
+    }
+    75%{
+        transform: translate(0);
+    }
+    90%{
+        transform: translateY(3rem);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
